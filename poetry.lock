@@ -65,7 +65,18 @@ files = [
     {file = "pyflakes-3.0.1.tar.gz", hash = "sha256:ec8b276a6b60bd80defed25add7e439881c19e64850afd9b346283d4165fd0fd"},
 ]
 
+[[package]]
+name = "random2"
+version = "1.0.1"
+description = "Python 3 compatible Pytohn 2 `random` Module."
+category = "main"
+optional = false
+python-versions = "*"
+files = [
+    {file = "random2-1.0.1.zip", hash = "sha256:34ad30aac341039872401595df9ab2c9dc36d0b7c077db1cea9ade430ed1c007"},
+]
+
 [metadata]
 lock-version = "2.0"
 python-versions = "^3.10"
-content-hash = "3bbef779192cf50448f8f27eba4746fcb40413e476200a6c2dec6b87e4634f2a"
+content-hash = "a42d3ae4d8bc9174bb096975ac5632dd0ef50cf5461eb61457f1efea11eab85a"
