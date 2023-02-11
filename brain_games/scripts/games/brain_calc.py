@@ -9,7 +9,7 @@ def get_expression():
     return f"{first_number} {operation_sign} {second_number}"
 
 
-def get_right_answer(expression):
+def get_answer_for_expression(expression):
     expression = expression.split()
     expression[0], expression[2] = int(expression[0]), int(expression[2])
     if expression[1] == "+":
@@ -23,7 +23,7 @@ def get_right_answer(expression):
 
 def main():
     game_rules = "What is the result of the expression?"
-    main_game_logic(game_rules, get_expression, get_right_answer)
+    main_game_logic(game_rules, get_expression, get_answer_for_expression)
 
 
 if __name__ == "__main__":
