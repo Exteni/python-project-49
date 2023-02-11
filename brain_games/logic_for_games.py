@@ -12,7 +12,6 @@ def main_game_logic(game_rules, question_for_user, answer_for_question):
         if user_answer == right_answer:
             print("Correct!")
         else:
-            print(type(user_answer), type(user_answer))
             print(f"'{user_answer}' is wrong answer ;(.", end=" ")
             print(f"Correct answer was '{right_answer}'.")
             print(f"Let's try again, {username}!")
