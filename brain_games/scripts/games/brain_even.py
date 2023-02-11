@@ -1,10 +1,10 @@
 from random import randint
-from brain_games.game_logic import main_game_logic
+from brain_games.logic_for_games import main_game_logic
 
 
 def get_random_number():
     minimum_number = 1
-    maximum_number = 100
+    maximum_number = 50
     return randint(minimum_number, maximum_number)
 
 
