@@ -4,4 +4,6 @@
 
 brain-even = https://asciinema.org/a/i8maza0kUHFiU4sn8rz2gipO9
 brain-calc = https://asciinema.org/a/9bTobzC9EtKaYBpOurkuGhShh
-brain-gcd =  https://asciinema.org/a/J0RiSS5jq9uIFKPQWyLI0FNFt
+brain-gcd = https://asciinema.org/a/J0RiSS5jq9uIFKPQWyLI0FNFt
+brain-progression = https://asciinema.org/a/IVRFUO0JXE912HEzw3ZnGBU02
+brain-prime = https://asciinema.org/a/5TNsPeQRNzMJs2g64j3h6gNGO

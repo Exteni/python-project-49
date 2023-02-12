@@ -8,13 +8,13 @@ def get_random_number():
     return randint(minimum_number, maximum_number)
 
 
-def get_answer_for_question(question):
-    return "yes" if question % 2 == 0 else "no"
+def even_or_not(number):
+    return "yes" if number % 2 == 0 else "no"
 
 
 def main():
     game_rules = 'Answer "yes" if the number is even, otherwise answer "no".'
-    main_game_logic(game_rules, get_random_number, get_answer_for_question)
+    main_game_logic(game_rules, get_random_number, even_or_not)
 
 
 if __name__ == "__main__":

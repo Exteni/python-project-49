@@ -3,8 +3,8 @@ from brain_games.logic_for_games import main_game_logic
 
 
 def get_progression():
-    random_step = randint(1, 30)
-    progression = [str(i * random_step) for i in range(1, 11)]
+    step_progression = randint(1, 30)
+    progression = [str(i * step_progression) for i in range(1, 11)]
     progression[randint(0, 9)] = ".."
     return " ".join(progression)
 
@@ -18,7 +18,6 @@ def get_missing_number(progression):
         length = len(progression)
         step = int(progression[length - 1]) - int(progression[length - 2])
     return str(step * (missing_number_index + 1))
-    
 
 
 def main():
