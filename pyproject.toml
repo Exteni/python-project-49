@@ -1,10 +1,16 @@
 [tool.poetry]
 name = "hexlet-code"
 version = "0.1.0"
-description = ""
-authors = ["Grigory <extenit@extenit.ru>"]
+description = "Five logical games"
+authors = ["Grigory Mukhin <extenit@yandex.ru>"]
 readme = "README.md"
 packages = [{include = "brain_games"}]
+repository = "https://github.com/Exteni/python-project-49"
+classifiers = [
+    "Development Status :: 4 - Beta",
+    "Topic :: Games/Entertainment :: Puzzle Games"
+]
+
 
 [tool.poetry.dependencies]
 python = "^3.10"
