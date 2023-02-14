@@ -8,7 +8,7 @@ def main_game_logic(game):
         question = game.question_for_user()
         print(f"Question: {question}")
         user_answer = input("Your answer: ")
-        right_answer = game.right_answer(question)
+        right_answer = game.answer_for_question(question)
         if user_answer == right_answer:
             print("Correct!")
         else:
