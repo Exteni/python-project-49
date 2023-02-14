@@ -17,4 +17,3 @@ def main_game_logic(game):
             print(f"Let's try again, {username}!")
             return
     print(f"Congratulations, {username}!")
-    
