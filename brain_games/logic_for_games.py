@@ -5,15 +5,14 @@ def main_game_logic(game):
     username = welcome_user()
     print(game.game_rules)
     for _ in range(3):
-        question = game.question_for_user()
+        question, answer = game.get_question_with_answer()
         print(f"Question: {question}")
         user_answer = input("Your answer: ")
-        right_answer = game.answer_for_question(question)
-        if user_answer == right_answer:
+        if user_answer == answer:
             print("Correct!")
         else:
             print(f"'{user_answer}' is wrong answer ;(.", end=" ")
-            print(f"Correct answer was '{right_answer}'.")
+            print(f"Correct answer was '{answer}'.")
             print(f"Let's try again, {username}!")
             return
     print(f"Congratulations, {username}!")
