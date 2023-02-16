@@ -9,11 +9,15 @@ MAXIMUM_POSSIBLE_NUMBER = 50
 def get_question_with_answer():
     first_number = randint(MINIMUM_POSSIBLE_NUMBER, MAXIMUM_POSSIBLE_NUMBER)
     second_number = randint(MINIMUM_POSSIBLE_NUMBER, MAXIMUM_POSSIBLE_NUMBER)
-    operation_sign = choice(("+", "-", "*"))
+    sign = choice(("+", "-", "*"))
+    answer = get_answer_for_expression(first_number, second_number, sign)
+    return f"{first_number} {sign} {second_number}", str(answer)
+
+
+def get_answer_for_expression(first_operand, second_operand, operation_sign):
     if operation_sign == "+":
-        answer = first_number + second_number
+        return first_operand + second_operand
     elif operation_sign == "-":
-        answer = first_number - second_number
-    else:
-        answer = first_number * second_number
-    return f"{first_number} {operation_sign} {second_number}", str(answer)
+        return first_operand - second_operand
+    elif operation_sign == "*":
+        return first_operand * second_operand
