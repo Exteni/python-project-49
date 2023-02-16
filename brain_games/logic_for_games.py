@@ -3,7 +3,7 @@ from brain_games.cli import welcome_user
 
 def main_game_logic(game):
     username = welcome_user()
-    print(game.game_rules)
+    print(game.GAME_RULE)
     for _ in range(3):
         question, answer = game.get_question_with_answer()
         print(f"Question: {question}")
