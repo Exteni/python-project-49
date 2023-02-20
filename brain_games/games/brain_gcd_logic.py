@@ -2,13 +2,13 @@ from random import randint
 
 
 GAME_RULE = "Find the greatest common divisor of given numbers."
-MINIMUM_POSSIBLE_NUMBER = 1
-MAXIMUM_POSSIBLE_NUMBER = 50
+MINIMUM_NUMBER = 1
+MAXIMUM_NUMBER = 50
 
 
 def get_question_with_answer():
-    first_number = randint(MINIMUM_POSSIBLE_NUMBER, MAXIMUM_POSSIBLE_NUMBER)
-    second_number = randint(MINIMUM_POSSIBLE_NUMBER, MAXIMUM_POSSIBLE_NUMBER)
+    first_number = randint(MINIMUM_NUMBER, MAXIMUM_NUMBER)
+    second_number = randint(MINIMUM_NUMBER, MAXIMUM_NUMBER)
     answer = get_gcd(first_number, second_number)
     return f"{first_number} {second_number}", answer
 

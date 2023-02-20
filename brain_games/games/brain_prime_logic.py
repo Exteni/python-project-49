@@ -2,12 +2,12 @@ from random import randint
 
 
 GAME_RULE = 'Answer "yes" if given number is prime. Otherwise answer "no".'
-MINIMUM_POSSIBLE_NUMBER = 1
-MAXIMUM_POSSIBLE_NUMBER = 100
+MINIMUM_NUMBER = 1
+MAXIMUM_NUMBER = 100
 
 
 def get_question_with_answer():
-    random_number = randint(MINIMUM_POSSIBLE_NUMBER, MAXIMUM_POSSIBLE_NUMBER)
+    random_number = randint(MINIMUM_NUMBER, MAXIMUM_NUMBER)
     answer = prime_or_not(random_number)
     return random_number, answer
 

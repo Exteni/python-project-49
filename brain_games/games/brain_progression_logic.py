@@ -2,8 +2,8 @@ from random import randint
 
 
 GAME_RULE = "What number is missing in the progression?"
-MINIMUM_POSSIBLE_STEP = 1
-MAXIMUM_POSSIBLE_STEP = 30
+MINIMUM_STEP = 1
+MAXIMUM_STEP = 30
 
 
 def get_question_with_answer():
@@ -13,7 +13,7 @@ def get_question_with_answer():
 
 
 def create_progression():
-    step_progression = randint(MINIMUM_POSSIBLE_STEP, MAXIMUM_POSSIBLE_STEP)
+    step_progression = randint(MINIMUM_STEP, MAXIMUM_STEP)
     return [str(i * step_progression) for i in range(1, 11)]
 
 
